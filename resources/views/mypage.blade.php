@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="col-lg-12 text-center mb-5 mt-3">
-        <h2><span>{{ $user['name'] }} さん</span></h2>
+        <h4><span>{{ $user['name'] }} さん</span></h4>
     </div>
     <div class="row">
         <div class="col-lg-12 text-center" style="font-size:30px; font-weight:bold; height:10%;">Score</div>
