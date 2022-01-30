@@ -67,7 +67,7 @@
                             </form>
                         </li>
                         <li class="nav-item">
-                            @if((Auth::user()->id === 5))
+                            @if((Auth::user()->id === 4))
                             <a  href="{{ route('adminCreate') }}" class="nav-link nav-select text-white" style="text-decoration:none; font-family: 'Caveat', cursive; font-size:1.5em;">　Menu</a>
                             @endif
                         </li>

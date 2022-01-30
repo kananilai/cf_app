@@ -120,13 +120,6 @@ class HomeController extends Controller
     {
         //ログイン中のユーザー情報取得
         $user = \Auth::user();
-        // $user_id =  \Auth::user()->id;
-        // $squats = Weight::where('weight_id', 1)->where('user_id',$id)->orderBy('date', 'DESC')->get();
-        // $deadlifts = Weight::where('weight_id', 2)->where('user_id',$id)->orderBy('date', 'DESC')->get();
-        // $snatches = Weight::where('weight_id', 3)->where('user_id',$id)->orderBy('date', 'DESC')->get();
-        // $cleans = Weight::where('weight_id', 4)->where('user_id',$id)->orderBy('date', 'DESC')->get();
-        // $records = Record::where('user_id',$id)->orderBy('created_at', 'DESC')->get();
-
         $weight= Weight::where('weight_id', $id)->where('id', $weightId)->delete();
         return redirect()->route('mypage',['id' =>$user['id']]);
 }
